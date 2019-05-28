@@ -15,17 +15,20 @@ const TableHeader = () => {
 const TableBody = () => {
   return (
     <tbody>
-     
+
     </tbody>
   )
 }
 
 class Table extends Component {
   render() {
+
+    const {characterData} = this.props
+
     return (
       <table>
         <TableHeader />
-        <TableBody />
+        <TableBody characterData={characterData} />
       </table>
     )
   }
