@@ -11,4 +11,12 @@ class Form extends Component{
 
 		this.state = this.initialState
 	}
+
+	handleChange = event => {
+		const {name, value} = even.target
+
+		this.setState({
+			[name]: value,
+		})
+	}
 }
